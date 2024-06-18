@@ -2,6 +2,7 @@ import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import React from 'react';
 import { SiGithub, SiLinkedin, SiX } from 'react-icons/si';
+import { FaFilePdf } from 'react-icons/fa6';
 
 const Navbar = ({ className }: { className?: string }) => {
   const socials = [
@@ -17,8 +18,13 @@ const Navbar = ({ className }: { className?: string }) => {
     },
     {
       link: 'https://www.linkedin.com/in/natnaeldemelash/',
-      label: '',
+      label: 'X',
       icon: SiX,
+    },
+    {
+      link: 'https://www.linkedin.com/in/natnaeldemelash/',
+      label: 'Resume',
+      icon: FaFilePdf,
     },
   ];
 
@@ -32,7 +38,12 @@ const Navbar = ({ className }: { className?: string }) => {
         {socials.map((social, index) => {
           const Icon = social.icon;
           return (
-            <Link href={social.link} aria-label={social.label}>
+            <Link
+              key={index}
+              href={social.link}
+              aria-label={social.label}
+              target="_blank"
+            >
               <Icon className="size-5 hover:scale-125 transition-all " />
             </Link>
           );
