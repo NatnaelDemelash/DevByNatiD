@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
@@ -16,8 +17,9 @@ export default function page() {
       </div>
 
       <div className="max-w-7xl mx-auto p-6 mt-20">
-          <Skills />
-          <Projects />
+        <Skills />
+        <Projects />
+        <Footer />
       </div>
     </div>
   );
