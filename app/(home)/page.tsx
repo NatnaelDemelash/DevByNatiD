@@ -1,5 +1,6 @@
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import Skills from './components/Skills';
 
 export default function page() {
   return (
@@ -11,6 +12,10 @@ export default function page() {
         </div>
 
         <div className="absolute h-10 xl:h-32 bg-gradient-to-t from-black -bottom-5 left-0 xl:bottom-0 w-full"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto p-6">
+          <Skills />
       </div>
     </div>
   );
