@@ -14,7 +14,7 @@ export default function page() {
         <div className="absolute h-10 xl:h-32 bg-gradient-to-t from-black -bottom-5 left-0 xl:bottom-0 w-full"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto p-6">
+      <div className="max-w-7xl mx-auto p-6 mt-20">
           <Skills />
       </div>
     </div>

@@ -11,8 +11,7 @@ const Hero = () => {
           Nice to meet you!👋🏽 <br /> I'm Natnael{' '}
         </h1>
         <p className="md:w-96 text-lg text-gray-300">
-          Passionate Frontend Web Developer based in Addis Ababa, dedicated to
-          crafting engaging and user-centric digital experiences
+        Passionate Frontend Web Developer based in Addis Ababa, committed to creating engaging and user-centric digital experiences.
         </p>
         <Link
           href={'mailto:natnael.dev101@gmail.com'}
