@@ -1,50 +1,59 @@
-"use client"
+'use client';
 
-import Title from './Title'
-import { HoverEffect } from '@/app/ui/card-hover-effect'
-import { SiGit, SiJavascript, SiNextdotjs, SiReact, SiTailwindcss, SiTypescript, SiVuedotjs } from 'react-icons/si'
+import Title from './Title';
+import { HoverEffect } from '@/app/ui/card-hover-effect';
+import {
+  SiGit,
+  SiJavascript,
+  SiNextdotjs,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+  SiVuedotjs,
+} from 'react-icons/si';
 
 const Skills = () => {
-
   const skills = [
     {
-        text: 'React',
-        icon: SiReact
+      text: 'React',
+      icon: SiReact,
     },
     {
-        text: 'Next.js',
-        icon: SiNextdotjs
+      text: 'Next.js',
+      icon: SiNextdotjs,
     },
     {
-        text: 'TailwindCSS',
-        icon: SiTailwindcss
+      text: 'TailwindCSS',
+      icon: SiTailwindcss,
     },
     {
-        text: 'Vue',
-        icon: SiVuedotjs
+      text: 'Vue',
+      icon: SiVuedotjs,
     },
     {
-        text: 'JavaScript',
-        icon: SiJavascript
+      text: 'JavaScript',
+      icon: SiJavascript,
     },
     {
-        text: 'Git',
-        icon: SiGit
+      text: 'Git',
+      icon: SiGit,
     },
     {
-        text: 'TypeScript',
-        icon: SiTypescript
-    }
-  ]  
-
+      text: 'TypeScript',
+      icon: SiTypescript,
+    },
+  ];
 
   return (
-    <div className='max-w-6xl mx-auto px-6'>
-        <Title text='Skills ⛷️' className="flex flex-col justify-center items-center -rotate-6"/>
+    <div className="max-w-6xl mx-auto px-6">
+      <Title
+        text="Skills ⛷️"
+        className="flex flex-col justify-center items-center rotate-6"
+      />
 
-        <HoverEffect items={skills}/>
+      <HoverEffect items={skills} />
     </div>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

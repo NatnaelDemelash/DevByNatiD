@@ -8,8 +8,11 @@ const Hero = () => {
   return (
     <div className="min-h-[60vh] flex flex-col-reverse pt-4 lg:pt-0 gap-14 lg:gap-0 lg:flex-row justify-between items-center">
       <div className="space-y-10 text-center lg:text-left">
-        <h1 className="font-bold leading-loose text-4xl lg:text-7xl">
-          Nice to meet you!👋🏽 <br /> I'm Natnael{' '}
+        <h1 className="font-bold leading-8 text-4xl lg:text-7xl">
+          Hey👋🏽! I'm Natnael <br />
+          <span className="block mt-6 text-3xl lg:text-5xl text-green-300">
+            FrontEnd Developer
+          </span>
         </h1>
         <p className="md:w-96 text-lg text-gray-300">
           Passionate Frontend Web Developer based in Addis Ababa, committed to
