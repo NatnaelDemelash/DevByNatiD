@@ -11,6 +11,7 @@ import {
   SiTypescript,
   SiVuedotjs,
 } from 'react-icons/si';
+import { text } from 'stream/consumers';
 
 const Skills = () => {
   const skills = [
@@ -28,7 +29,7 @@ const Skills = () => {
     },
     {
       text: 'Vue',
-      icon: SiVuedotjs,
+      icon: SiVuedotjs
     },
     {
       text: 'JavaScript',
@@ -45,12 +46,11 @@ const Skills = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-6">
+    <div className="max-w-7xl mx-auto px-6">
       <Title
         text="Skills ⛷️"
         className="flex flex-col justify-center items-center rotate-6"
       />
-
       <HoverEffect items={skills} />
     </div>
   );

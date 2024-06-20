@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <div className="min-h-[60vh] flex flex-col-reverse pt-4 lg:pt-0 gap-14 lg:gap-0 lg:flex-row justify-between items-center">
+    <div className="min-h-[70vh] flex flex-col-reverse pt-4 lg:pt-0 gap-14 lg:gap-0 lg:flex-row justify-between items-center">
       <div className="space-y-10 text-center lg:text-left">
         <h1 className="font-bold leading-8 text-4xl lg:text-7xl">
           Hey👋🏽! I'm Natnael <br />

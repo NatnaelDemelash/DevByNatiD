@@ -3,76 +3,22 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useState } from 'react';
-import { IconType } from 'react-icons';
 import 'swiper/swiper-bundle.css';
 import Image from 'next/image';
-
-import {
-  SiCss3,
-  SiGithub,
-  SiHtml5,
-  SiJavascript,
-  SiNextdotjs,
-  SiReact,
-  SiReactquery,
-  SiRedux,
-  SiTailwindcss,
-  SiTypescript,
-} from 'react-icons/si';
 import { BsArrowUpRightSquare } from 'react-icons/bs';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Title from './Title';
+import { PROJECTS } from '@/app/(constants)';
+import { SiGithub } from 'react-icons/si';
 
-const projects = [
-  {
-    num: '01',
-    category: 'frontend',
-    title: 'Puluk Travel',
-    description: 'Travel UI/UX App for Camping',
-    tech: [SiTypescript, SiNextdotjs, SiTailwindcss] as IconType[],
-    link: 'puluk-travel.vercel.app',
-    cover: '/Project-1.png',
-    background: 'bg-[#CD6155]',
-  },
-  {
-    num: '02',
-    category: 'frontend',
-    title: 'Pizzeria Pizza',
-    description: 'A React pizza ordering app',
-    tech: [SiReact, SiReactquery, SiTailwindcss] as IconType[],
-    link: 'pizzeria101.netlify.app/',
-    cover: '/Project-2.png',
-    background: 'bg-[#512E5F]',
-  },
-  {
-    num: '03',
-    category: 'frontend',
-    title: 'OmniFood',
-    description:
-      '[Cloned website] An AI based tech company which majorly focuses on consumer well-being through a healthy diet.',
-    tech: [SiHtml5, SiCss3, SiJavascript] as IconType[],
-    link: 'https://localhost:300',
-    cover: '/Project-3.png',
-    background: 'bg-indigo-500',
-  },
-  {
-    num: '04',
-    category: 'frontend',
-    title: 'Aurora Aisel',
-    description: 'A react E-commerce project with context API',
-    tech: [SiReact, SiRedux, SiTailwindcss, SiReactquery] as IconType[],
-    link: 'aurora-aisel-shop.vercel.app',
-    cover: '/Project-4.png',
-    background: 'bg-[#F0B27A]',
-  },
-];
+
 
 const Work = () => {
-  const [project, setProject] = useState(projects[0]);
+  const [project, setProject] = useState(PROJECTS[0]);
 
   const handleSlideChange = (swiper: { activeIndex: any }) => {
     const currentIndex = swiper.activeIndex;
-    setProject(projects[currentIndex]);
+    setProject(PROJECTS[currentIndex]);
   };
 
   return (
@@ -87,7 +33,7 @@ const Work = () => {
       <div className="py-10 p-5 sm:p-0">
         <Title
           text="Projects ⚒️"
-          className="flex flex-col justify-center items-center -rotate-6"
+          className="flex flex-col mb-14 justify-center items-center -rotate-6"
         />
       </div>
       <div className="my-10 p-5 sm:p-0">
@@ -131,10 +77,10 @@ const Work = () => {
             <Swiper
               slidesPerView={1}
               spaceBetween={30}
-              className="xl:h-[520px] mb-12"
+              className="xl:h-[520px] mb-12 cursor-pointer"
               onSlideChange={handleSlideChange}
             >
-              {projects.map((project, idx) => {
+              {PROJECTS.map((project, idx) => {
                 return (
                   <SwiperSlide key={idx} className="w-full">
                     <div className="h-[430px] bg-pink-50/20 relative group flex flex-col justify-center items-center">

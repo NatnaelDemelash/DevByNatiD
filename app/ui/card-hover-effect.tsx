@@ -18,7 +18,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-2 lg:grid-cols-3 py-10",
+        "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-10",
         className
       )}
     >
@@ -27,7 +27,7 @@ export const HoverEffect = ({
 
         return <div
           key={idx}
-          className="relative group  block p-2 h-full w-full"
+          className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -50,8 +50,8 @@ export const HoverEffect = ({
           </AnimatePresence>
           <div className="relative rounded-md w-full p-4 overflow-hidden bg-black group-hover:ring-2 ring-green-500 z-20 transition-all duration-500 cursor-pointer">
             <div className="relative py-10 z-50 space-y-5">
-                <Icon className="size-8 mx-auto"/>
-               <p className="font-bold text-md md:text-2xl text-center text-gray-300">{item.text}</p> 
+                <Icon className="size-7 mx-auto"/>
+               <p className="font-bold text-md md:text-xl text-center text-gray-300">{item.text}</p> 
             </div>
           </div>
         </div>

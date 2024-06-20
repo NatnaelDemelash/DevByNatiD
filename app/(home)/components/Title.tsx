@@ -11,8 +11,8 @@ const Title = ({ text, className }: TitleProps) => {
       <h1 className="text-3xl font-semibold group-hover:text-green-400 transition-all">
         {text}
       </h1>
-      <div className="h-2 w-32 bg-green-500 rounded-full" />
-      <div className="h-2 w-32 bg-indigo-500 rounded-full translate-x-2" />
+      <div className="h-1 w-32 bg-green-500 rounded-full" />
+      <div className="h-1 w-32 bg-indigo-500 rounded-full translate-x-2" />
     </div>
   );
 };
