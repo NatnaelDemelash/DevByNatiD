@@ -96,7 +96,7 @@ const Work = () => {
                     <Swiper  slidesPerView={1} spaceBetween={30} className='xl:h-[520px] mb-12' onSlideChange={handleSlideChange}>
                       {projects.map((project, idx) => {
                         return <SwiperSlide key={idx} className='w-full'>
-                          <div className='h-[460px] bg-pink-50/20 relative group flex flex-col justify-center items-center'></div>
+                          <div className='h-[460px] bg-pink-50/20 relative group flex justify-center items-center'></div>
                         </SwiperSlide>
                       })}
                     </Swiper>
