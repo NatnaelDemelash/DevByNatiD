@@ -60,14 +60,14 @@ const Work = () => {
                 <Link href="#">
                   <BsArrowUpRightSquare
                     size={40}
-                    className="bg-[#FAD7A0] text-black font-bold rounded-sm p-2"
+                    className="bg-indigo-400 rounded-sm p-2"
                   />
                 </Link>
                 {/* Github link */}
                 <Link href="#">
                   <SiGithub
                     size={40}
-                    className="bg-[#FAD7A0] text-black font-bold rounded-sm p-2"
+                    className="bg-indigo-400  font-bold rounded-sm p-2"
                   />
                 </Link>
               </div>

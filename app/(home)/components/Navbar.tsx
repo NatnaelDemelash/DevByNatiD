@@ -12,19 +12,20 @@ const Navbar = ({ className }: { className?: string }) => {
       icon: SiLinkedin,
     },
     {
-      link: 'https://www.linkedin.com/in/natnaeldemelash/',
+      link: 'https://github.com/natnaeldemelash',
       label: 'GitHub',
       icon: SiGithub,
     },
     {
-      link: 'https://www.linkedin.com/in/natnaeldemelash/',
+      link: 'https://x.com/nati_demelash',
       label: 'X',
       icon: SiX,
     },
     {
-      link: 'https://www.linkedin.com/in/natnaeldemelash/',
+      link: '/natnaeldemelash.pdf',
       label: 'Resume',
       icon: FaFilePdf,
+      download: true
     },
   ];
 
@@ -35,20 +36,21 @@ const Navbar = ({ className }: { className?: string }) => {
       </h1>
 
       <div className="flex items-center gap-5">
-        {socials.map((social, index) => {
-          const Icon = social.icon;
-          return (
-            <Link
-              key={index}
-              href={social.link}
-              aria-label={social.label}
-              target="_blank"
-            >
-              <Icon className="size-5 hover:scale-125 transition-all " />
-            </Link>
-          );
-        })}
-      </div>
+      {socials.map((social, index) => {
+        const Icon = social.icon;
+        return (
+          <Link
+            key={index}
+            href={social.link}
+            aria-label={social.label}
+            {...(social.download ? { download: true } : { target: "_blank" })} // Conditional attributes
+            rel="noopener noreferrer"
+          >
+            <Icon className="size-5 hover:scale-125 transition-all" />
+          </Link>
+        );
+      })}
+</div>
     </nav>
   );
 };

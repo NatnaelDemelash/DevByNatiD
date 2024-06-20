@@ -1,3 +1,4 @@
+import { url } from 'inspector';
 import type { Config } from 'tailwindcss';
 
 const svgToDataUri = require('mini-svg-data-uri');
@@ -25,6 +26,9 @@ const config = {
       },
     },
     extend: {
+      backgroundImage: {
+        customBackground: "url('/footer-grid.svg')"
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

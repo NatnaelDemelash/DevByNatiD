@@ -4,12 +4,14 @@ import {
   SiGithub,
   SiHtml5,
   SiJavascript,
+  SiLinkedin,
   SiNextdotjs,
   SiReact,
   SiReactquery,
   SiRedux,
   SiTailwindcss,
   SiTypescript,
+  SiX,
 } from 'react-icons/si';
 
 export const EXPERIENCES = [
@@ -32,7 +34,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    num: '01',
+    num: '፩ - 01',
     category: 'frontend',
     title: 'Puluk Travel',
     description: 'Travel UI/UX App for Camping',
@@ -42,7 +44,7 @@ export const PROJECTS = [
     background: 'bg-[#CD6155]',
   },
   {
-    num: '02',
+    num: '፪ - 02',
     category: 'frontend',
     title: 'Pizzeria Pizza',
     description:   'Pizza ordering website .Users can browse through a variety of pizza options, select their preferred menu',
@@ -52,7 +54,7 @@ export const PROJECTS = [
     background: 'bg-[#512E5F]',
   },
   {
-    num: '03',
+    num: '፫ - 03',
     category: 'frontend',
     title: 'OmniFood',
     description:
@@ -63,7 +65,7 @@ export const PROJECTS = [
     background: 'bg-indigo-500',
   },
   {
-    num: '04',
+    num: '፬ - 04',
     category: 'frontend',
     title: 'Aurora Aisel',
     description:'An Ecommerce app built with React.js using react context -( FakeStore API) for data fetching/backend',
@@ -71,5 +73,20 @@ export const PROJECTS = [
     link: 'aurora-aisel-shop.vercel.app',
     cover: '/Project-4.png',
     background: 'bg-[#F0B27A]',
+  },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+  },
+  {
+    id: 2,
+    img: "/twit.svg",
+  },
+  {
+    id: 3,
+    img: "/link.svg",
   },
 ];

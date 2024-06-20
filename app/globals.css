@@ -82,3 +82,9 @@
 
   box-shadow: 0 0 200px 130px #af7ac5;
 }
+
+@layer utilities {
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
+}

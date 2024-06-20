@@ -46,7 +46,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6">
+    <div className="max-w-7xl mx-auto px-6 mb-20">
       <Title
         text="Skills ⛷️"
         className="flex flex-col justify-center items-center rotate-6"
