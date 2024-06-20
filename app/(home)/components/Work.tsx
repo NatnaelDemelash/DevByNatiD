@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import Title from './Title';
 import { PROJECTS } from '@/app/(constants)';
 import { SiGithub } from 'react-icons/si';
+import WorkSlideBtns from './WorkSlideBtns';
 
 
 
@@ -60,14 +61,14 @@ const Work = () => {
                 <Link href="#">
                   <BsArrowUpRightSquare
                     size={40}
-                    className="bg-indigo-400 rounded-sm p-2"
+                    className="bg-green-700 rounded-sm p-2"
                   />
                 </Link>
                 {/* Github link */}
                 <Link href="#">
                   <SiGithub
                     size={40}
-                    className="bg-indigo-400  font-bold rounded-sm p-2"
+                    className="bg-green-700  font-bold rounded-sm p-2"
                   />
                 </Link>
               </div>
@@ -85,20 +86,21 @@ const Work = () => {
                   <SwiperSlide key={idx} className="w-full">
                     <div className="h-[430px] bg-pink-50/20 relative group flex flex-col justify-center items-center">
                       {/* Overlay */}
-
+                      <div className='absolute w-full h-full top-0 bottom-0 bg-black/10 z-10'></div>
                       {/* image */}
                       <div className="relative w-full h-full">
                         <Image
                           src={project.cover}
                           fill
                           alt=""
-                          className="object-cover rounded-md shadow-xl shadow-indigo-500"
+                          className="object-cover rounded-md"
                         />
                       </div>
                     </div>
                   </SwiperSlide>
                 );
               })}
+              <WorkSlideBtns containerStyles='flex gap-2 absolute right-2 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none' btnStyles='bg-green-700 text-white text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all rounded-sm'/>
             </Swiper>
           </div>
         </div>
