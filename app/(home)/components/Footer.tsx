@@ -23,8 +23,8 @@ const Footer = () => {
           presence to the next level?
         </h1>
         <p className="text-white-200 my-5 md:mt-10 text-center">
-          Feel free to get in touch, and let's chat about how can I support you
-          in reaching your goals.
+          Feel free to get in touch, and let&apos;s chat about how can I support
+          you in reaching your goals.
         </p>
 
         <a href="mailto:natnael.dev101@gmail.com">
