@@ -1,24 +1,17 @@
-'use client'
+'use client';
 
-import { EXPERIENCES } from '@/app/(constants)'
-import { motion } from 'framer-motion'
-import React from 'react'
-import Title from './Title'
+import { EXPERIENCES } from '@/app/(constants)';
+import { motion } from 'framer-motion';
+import React from 'react';
+import Title from './Title';
 
 const Experience = () => {
   return (
     <div className="w-full min-h-[50vh]">
-      <motion.h2
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="my-18 text-center text-4xl"
-      >
       <Title
-            text="Experience 🧗"
-            className="flex flex-col mb-16 justify-center items-center -rotate-6"
-          />
-      </motion.h2>
+        text="Experience 🧗"
+        className="flex flex-col mb-16 justify-center items-center -rotate-6"
+      />
       <div>
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className="mb-20 flex flex-wrap lg:justify-center ">
@@ -28,7 +21,9 @@ const Experience = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
-              <p className="mb-2 mt-2 text-md text-neutral-400">{experience.year}</p>
+              <p className="mb-2 mt-2 text-md text-neutral-400">
+                {experience.year}
+              </p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 100 }}
@@ -58,7 +53,7 @@ const Experience = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;

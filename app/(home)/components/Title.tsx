@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 interface TitleProps {
@@ -8,11 +9,16 @@ interface TitleProps {
 const Title = ({ text, className }: TitleProps) => {
   return (
     <div className={className}>
-      <h1 className="text-3xl font-semibold group-hover:text-green-400 transition-all">
+      <motion.h1
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="my-18 text-center text-4xl"
+      >
         {text}
-      </h1>
-      <div className="h-1 w-32 bg-green-500 rounded-full" />
-      <div className="h-1 w-32 bg-indigo-500 rounded-full translate-x-2" />
+        <div className="h-1 w-32 bg-green-500 rounded-full" />
+        <div className="h-1 w-32 bg-indigo-500 rounded-full translate-x-2" />
+      </motion.h1>
     </div>
   );
 };

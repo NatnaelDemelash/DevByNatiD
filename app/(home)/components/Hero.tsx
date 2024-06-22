@@ -7,7 +7,8 @@ const Hero = () => {
     <div className="min-h-[70vh] flex flex-col-reverse pt-4 lg:pt-0 gap-14 lg:gap-0 lg:flex-row justify-between items-center">
       <div className="space-y-10 text-center lg:text-left">
         <h1 className="font-bold leading-8 text-4xl lg:text-7xl">
-          Hey👋🏽! I'm Natnael <br />
+          Hey👋🏽! I'm Natnael
+          <br />
           <span className="block mt-6 text-3xl lg:text-5xl text-green-300">
             FrontEnd Developer
           </span>
@@ -20,26 +21,13 @@ const Hero = () => {
           href={'mailto:natnael.dev101@gmail.com'}
           className="inline-block group"
         >
-         <MovingBorderBtn borderRadius="0.5rem" className="p-4 font-semibold">
+          <MovingBorderBtn borderRadius="0.5rem" className="p-4 font-semibold">
             <p>Contact Me 📫</p>
-         </MovingBorderBtn>
+          </MovingBorderBtn>
         </Link>
       </div>
 
       <div className="relative">
-        {/* <div className="w-72 h-72 -rotate-[30deg] space-y-3 relative">
-          <div className="flex gap-3 translate-x-8">
-            <div className="w-28 h-28 rounded-2xl bg-indigo-500"></div>
-            <div className="w-28 h-28 rounded-full bg-green-500"></div>
-          </div>
-
-          <div className="flex gap-3 -translate-x-8">
-            <div className="w-28 h-28 rounded-2xl bg-green-500"></div>
-            <div className="w-28 h-28 rounded-full bg-indigo-500"></div>
-          </div>
-          <div className="glow absolute top-[40%] right-1/2 -z-10" />
-        </div> */}
-
         <div>
           <Image
             src="/profile.jpg"

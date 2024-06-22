@@ -11,7 +11,6 @@ import {
   SiTypescript,
   SiVuedotjs,
 } from 'react-icons/si';
-import { text } from 'stream/consumers';
 
 const Skills = () => {
   const skills = [
@@ -29,7 +28,7 @@ const Skills = () => {
     },
     {
       text: 'Vue',
-      icon: SiVuedotjs
+      icon: SiVuedotjs,
     },
     {
       text: 'JavaScript',
