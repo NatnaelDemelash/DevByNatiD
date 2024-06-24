@@ -1,6 +1,7 @@
 import { MovingBorderBtn } from '@/app/ui/moving-boarder';
 import Link from 'next/link';
 import Image from 'next/image';
+import Button from './Button';
 
 const Hero = () => {
   return (
@@ -21,9 +22,7 @@ const Hero = () => {
           href={'mailto:natnael.dev101@gmail.com'}
           className="inline-block group"
         >
-          <MovingBorderBtn borderRadius="0.5rem" className="p-4 font-semibold">
-            <p>Contact Me 📫</p>
-          </MovingBorderBtn>
+          <Button label="🎯 Contact Me" />
         </Link>
       </div>
 

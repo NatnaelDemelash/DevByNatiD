@@ -47,7 +47,8 @@ export const PROJECTS = [
     num: '፪ - 02',
     category: 'frontend',
     title: 'Pizzeria Pizza',
-    description:   'Pizza ordering website .Users can browse through a variety of pizza options, select their preferred menu',
+    description:
+      'Pizza ordering website .Users can browse through a variety of pizza options, select their preferred menu',
     tech: [SiReact, SiReactquery, SiTailwindcss] as IconType[],
     link: 'pizzeria101.netlify.app/',
     cover: '/Project-2.png',
@@ -68,7 +69,8 @@ export const PROJECTS = [
     num: '፬ - 04',
     category: 'frontend',
     title: 'Aurora Aisel',
-    description:'An Ecommerce app built with React.js using react context -( FakeStore API) for data fetching/backend',
+    description:
+      'An Ecommerce app built with React.js using react context -( FakeStore API) for data fetching/backend',
     tech: [SiReact, SiRedux, SiTailwindcss, SiReactquery] as IconType[],
     link: 'aurora-aisel-shop.vercel.app',
     cover: '/Project-4.png',
@@ -79,14 +81,14 @@ export const PROJECTS = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: '/git.svg',
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: '/twit.svg',
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: '/link.svg',
   },
 ];

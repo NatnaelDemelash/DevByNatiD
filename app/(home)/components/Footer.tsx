@@ -2,6 +2,7 @@ import { FaLocationArrow } from 'react-icons/fa';
 import { MovingBorderBtn } from '@/app/ui/moving-boarder';
 import { socialMedia } from '@/app/(constants)';
 import Image from 'next/image';
+import { GiThumbUp } from 'react-icons/gi';
 const Footer = () => {
   return (
     // <footer className="border-t mt-10 md:mt-24 ">
