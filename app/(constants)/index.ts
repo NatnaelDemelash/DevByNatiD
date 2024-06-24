@@ -40,7 +40,7 @@ export const PROJECTS = [
     description:
       'Fully responsive modern UI/UX Website with Next.js for Travel and Camping App',
     tech: [SiTypescript, SiNextdotjs, SiTailwindcss] as IconType[],
-    demo: 'puluk-travel.vercel.app',
+    demo: 'https://puluk-travel.vercel.app',
     githubLink: 'https://github.com/NatnaelDemelash/puluk_travel',
     cover: '/Project-1.png',
     background: 'bg-[#CD6155]',
@@ -52,7 +52,7 @@ export const PROJECTS = [
     description:
       'Pizza ordering website .Users can browse through a variety of pizza options, select their preferred menu',
     tech: [SiReact, SiReactquery, SiTailwindcss] as IconType[],
-    demo: 'pizzeria101.netlify.app/',
+    demo: 'https://pizzeria101.netlify.app/',
     githubLink: 'https://github.com/NatnaelDemelash/pizzeria_pizza',
     cover: '/Project-2.png',
     background: 'bg-[#512E5F]',
@@ -64,7 +64,7 @@ export const PROJECTS = [
     description:
       '[Cloned website] An AI based tech company which majorly focuses on consumer well-being through a healthy diet.',
     tech: [SiHtml5, SiCss3, SiJavascript] as IconType[],
-    demo: 'loquacious-haupia-108385.netlify.app/',
+    demo: 'https://loquacious-haupia-108385.netlify.app/',
     githubLink: 'https://github.com/NatnaelDemelash/OmniFood',
     cover: '/Project-3.png',
     background: 'bg-indigo-500',
@@ -76,7 +76,7 @@ export const PROJECTS = [
     description:
       'An Ecommerce app built with React.js using react context -( FakeStore API) for data fetching/backend',
     tech: [SiReact, SiRedux, SiTailwindcss, SiReactquery] as IconType[],
-    demo: 'aurora-aisel-shop.vercel.app',
+    demo: 'https://aurora-aisel-shop.vercel.app',
     githubLink: 'https://github.com/NatnaelDemelash/aurora_aisel_shop',
     cover: '/Project-4.png',
     background: 'bg-[#F0B27A]',
