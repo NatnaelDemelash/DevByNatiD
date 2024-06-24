@@ -12,8 +12,6 @@ import { PROJECTS } from '@/app/(constants)';
 import { SiGithub } from 'react-icons/si';
 import WorkSlideBtns from './WorkSlideBtns';
 
-
-
 const Work = () => {
   const [project, setProject] = useState(PROJECTS[0]);
 
@@ -58,17 +56,17 @@ const Work = () => {
               <div className="border border-white/20" />
               <div className="flex items-center gap-4">
                 {/* Live Project Demo */}
-                <Link href="#">
+                <Link href={project.demo} target="_blank">
                   <BsArrowUpRightSquare
                     size={40}
-                    className="bg-green-700 rounded-sm p-2"
+                    className="bg-[#5D6D7E] hover:bg-green-400 transition-all rounded-sm p-2"
                   />
                 </Link>
                 {/* Github link */}
-                <Link href="#">
+                <Link href={project.githubLink} target="_blank">
                   <SiGithub
                     size={40}
-                    className="bg-green-700  font-bold rounded-sm p-2"
+                    className="bg-[#5D6D7E] hover:bg-green-400 transition-all font-bold rounded-sm p-2"
                   />
                 </Link>
               </div>
@@ -86,7 +84,7 @@ const Work = () => {
                   <SwiperSlide key={idx} className="w-full">
                     <div className="h-[430px] bg-pink-50/20 relative group flex flex-col justify-center items-center">
                       {/* Overlay */}
-                      <div className='absolute w-full h-full top-0 bottom-0 bg-black/10 z-10'></div>
+                      <div className="absolute w-full h-full top-0 bottom-0 bg-black/10 z-10"></div>
                       {/* image */}
                       <div className="relative w-full h-full">
                         <Image
@@ -100,7 +98,10 @@ const Work = () => {
                   </SwiperSlide>
                 );
               })}
-              <WorkSlideBtns containerStyles='flex gap-2 absolute right-2 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none' btnStyles='bg-green-700 text-white text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all rounded-sm'/>
+              <WorkSlideBtns
+                containerStyles="flex gap-2 absolute right-2 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
+                btnStyles="bg-[#5D6D7E] text-white text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all rounded-sm"
+              />
             </Swiper>
           </div>
         </div>
