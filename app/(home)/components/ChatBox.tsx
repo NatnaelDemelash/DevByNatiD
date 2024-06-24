@@ -24,7 +24,8 @@ const ChatBox = () => {
                 <div className='text-xl cursor-pointer' onClick={handleCloseModal}>󠀥󠀥󠀽✖️</div>
             </div>
 
-            <h1 className='text-green-400 px-2 py-1 mt-3 text-lg uppercase mb-4'> <span className='text-2xl bg-yellow-400 p-1 rounded-full'>👨🏾</span> Nati&apos;s Bot</h1>
+            <h1 className='text-green-400 px-2 py-1 mt-3 text-lg uppercase mb-4 flex items-center gap-2'> <span className='text-2xl bg-yellow-200 p-1 w-10 h-10 flex items-center justify-center rounded-full'>
+                👨🏾</span> <p>Nati&apos;s Bot</p> </h1>
             <p className='p-2 text-xl'>Nice to meet you! 👋 I&apos;m Natnael. Try these questions 👇</p>
 
             <Accordion />
