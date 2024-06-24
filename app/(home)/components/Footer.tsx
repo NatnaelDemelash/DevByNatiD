@@ -1,6 +1,5 @@
 import { FaLocationArrow } from 'react-icons/fa';
 import { MovingBorderBtn } from '@/app/ui/moving-boarder';
-import Navbar from './Navbar';
 import { socialMedia } from '@/app/(constants)';
 import Image from 'next/image';
 const Footer = () => {

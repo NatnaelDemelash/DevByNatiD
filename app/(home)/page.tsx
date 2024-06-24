@@ -1,3 +1,4 @@
+import ChatBox from './components/ChatBox';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
@@ -22,6 +23,10 @@ export default function page() {
         <Work />
         <Experience />
         <Footer />
+      </div>
+
+      <div className='hidden md:block fixed right-10 bottom-14 z-50'>
+          <ChatBox />
       </div>
     </div>
   );
