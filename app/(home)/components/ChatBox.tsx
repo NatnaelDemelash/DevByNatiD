@@ -21,7 +21,7 @@ const ChatBox = () => {
       {isModalOpen && (
         <BackgroundGradient className="h-[75vh] w-[400px] p-3 overflow-y-auto">
           <div className="flex justify-between items-center border-b border-white px-3 py-2">
-            <h1 className="text-3xl font-bold">👨🏽‍💻 Chat</h1>
+            <h1 className="text-2xl font-bold">👨🏽‍💻 Chat</h1>
 
             <Minus
               size={55}
@@ -37,7 +37,7 @@ const ChatBox = () => {
             </span>{' '}
             <p>Nati&apos;s Bot</p>{' '}
           </h1>
-          <p className="p-2 text-xl">
+          <p className="p-2 text-lg">
             Nice to meet you! 👋 I&apos;m Natnael. Try these questions 👇
           </p>
 
@@ -47,7 +47,7 @@ const ChatBox = () => {
 
       <button
         className="w-20 h-20 flex items-center justify-center rounded-full bg-[#333] font-bold text-white 
-        tracking-widest cursor-pointer transform hover:scale-110 transition-all duration-200 border-2 border-[#F9E79F]"
+        tracking-widest cursor-pointer transform hover:scale-110 transition-all duration-200 border-2 border-[#F9E79F] shadow-sm shadow-[#F9E79F]"
       >
         <div className="text-5xl " onClick={handleButtonClick}>
           👨🏻‍💻

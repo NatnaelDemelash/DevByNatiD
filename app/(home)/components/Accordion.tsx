@@ -31,7 +31,7 @@ const Accordion = () => {
       {faqs.map((faq, index) => (
         <div key={index} className="mb-4">
           <button
-            className="w-full p-3 text-left bg-[#1d1b1b] text-white rounded-xl"
+            className="w-full text-sm p-3 text-left bg-[#1d1b1b] text-white rounded-xl  transition-all"
             onClick={() => toggleAccordion(index)}
           >
             {faq.question}
