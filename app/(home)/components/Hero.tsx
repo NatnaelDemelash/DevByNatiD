@@ -22,7 +22,10 @@ const Hero = () => {
           href={'mailto:natnael.dev101@gmail.com'}
           className="inline-block group"
         >
-          <Button label="🎯 Contact Me" />
+          {/* <Button label="🎯 Contact Me" /> */}
+          <MovingBorderBtn borderRadius="0.5rem" className="p-4 font-semibold">
+            📫 Contact Me
+          </MovingBorderBtn>
         </Link>
       </div>
 
@@ -37,11 +40,11 @@ const Hero = () => {
           />
         </div>
 
-        <div className="absolute bottom-5 sm:bottom-8 left-0 sm:-left-10">
+        {/* <div className="absolute bottom-5 sm:bottom-8 left-0 sm:-left-10">
           <MovingBorderBtn borderRadius="0.5rem" className="p-4 font-semibold">
             <p>💼 Available for Freelance</p>
           </MovingBorderBtn>
-        </div>
+        </div> */}
       </div>
     </div>
   );

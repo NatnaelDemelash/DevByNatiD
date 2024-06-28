@@ -40,7 +40,7 @@ const Experience = () => {
               <p className="mb-4 text-sm text-neutral-400">
                 {experience.description}
               </p>
-              {experience.technologies.map((tech, index) => (
+              {experience.technologies?.map((tech, index) => (
                 <span
                   key={index}
                   className="text-xs bg-neutral-900 text-[#FAD7A0] rounded px-2 py-1 mr-2"
